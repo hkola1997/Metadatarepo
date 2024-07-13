@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Sprint --></value>
+    </caseValues>
+    <fields>
+        <help>この値は、スプリント内のユーザーストーリーのステータスが [完了] に変更されたときに、そのユーザー ストーリーの計画ポイント合計を合計して計算されます。このステータスは、実速度ステータス(Actual Velocity Statuses)カスタムメタデータタイプで設定できます。詳細については、Copado Sprint Velocityの記事を参照してください。</help>
+        <label><!-- Actual Velocity --></label>
+        <name>copado__Actual_Velocity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in sprint --></label>
+        <name>copado__Days_in_sprint__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>copado__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full time resources in sprint --></label>
+        <name>copado__Full_time_resources_in_sprint__c</name>
+    </fields>
+    <fields>
+        <help>スプリントのステータスが進行中に変更されたときに、スプリント内のすべてのユーザーストーリーに割り当てられたポイントを合計することによって計算されます。この値は、スプリントの開始時に一度だけ計算されます。</help>
+        <label><!-- Initial Planned Velocity --></label>
+        <name>copado__InitialPlannedVelocity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sprint Goal --></label>
+        <name>copado__Objective__c</name>
+    </fields>
+    <fields>
+        <help>この値は、スプリント内のすべてのユーザーストーリーに割り当てられた計画ポイントまたはその他の計画ポイントに変更が加えられるたびに、または新しいユーザーストーリーが追加されるたびに再計算されます。</help>
+        <label><!-- Planned Velocity --></label>
+        <name>copado__Planned_Velocity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>copado__Project__c</name>
+        <relationshipLabel><!-- Sprints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>copado__Release__c</name>
+        <relationshipLabel><!-- Sprints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>copado__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完了フラグ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>下書き</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>計画されている</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Capacity (Points) --></label>
+        <name>copado__Story_points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>copado__Team__c</name>
+        <relationshipLabel><!-- Sprints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Working Days Left --></label>
+        <name>copado__Working_Days_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working days in sprint --></label>
+        <name>copado__Working_days_in_sprint__c</name>
+    </fields>
+    <nameFieldLabel><!-- Sprint Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You must introduce an End Date greater than the Start Date. --></errorMessage>
+        <name>copado__EndDate_Should_be_Greater_than_StartDate</name>
+    </validationRules>
+</CustomObjectTranslation>

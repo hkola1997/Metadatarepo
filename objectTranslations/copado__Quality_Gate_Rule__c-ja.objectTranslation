@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Quality Gate Rule --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Copado Actions List --></label>
+        <name>copado__ActionsList__c</name>
+    </fields>
+    <fields>
+        <help>この品質ゲートルールを適用するコパードアクションを選択します。</help>
+        <label><!-- Copado Actions --></label>
+        <name>copado__Actions__c</name>
+    </fields>
+    <fields>
+        <help>実行時に、選択したアクションに対して品質ゲートルールを評価するタイミングを定義します。</help>
+        <label><!-- Execution Sequence --></label>
+        <name>copado__Execution_sequence__c</name>
+        <picklistValues>
+            <masterLabel>After</masterLabel>
+            <translation>アフター</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before</masterLabel>
+            <translation>ビフォアー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>アクティブ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>非有効</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>関連する条件が満たされた場合に、テストを実行するために使用されるツール。この値は、テストレコードのツールと照合されます。</help>
+        <label><!-- Tool --></label>
+        <name>copado__Tool__c</name>
+    </fields>
+    <fields>
+        <help>選択したツールに関連する品質ゲートの種類を特定します。</help>
+        <label><!-- Type --></label>
+        <name>copado__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- dataJson --></label>
+        <name>copado__dataJson__c</name>
+    </fields>
+    <nameFieldLabel><!-- Quality Gate Rule Name --></nameFieldLabel>
+</CustomObjectTranslation>

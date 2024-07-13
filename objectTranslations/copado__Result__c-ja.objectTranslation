@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Result --></value>
+    </caseValues>
+    <fields>
+        <help>このフィールドはCopadoによって自動的に更新されます。</help>
+        <label><!-- Apex Callback --></label>
+        <name>copado__ApexCallback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Sync Status --></label>
+        <name>copado__CreditSyncStatus__c</name>
+    </fields>
+    <fields>
+        <help>関数の実行に使用されるコパードクレジット</help>
+        <label><!-- Copado Credits Used --></label>
+        <name>copado__Custom_Function_Used_Credits__c</name>
+    </fields>
+    <fields>
+        <help>関数の実行に要した時間（分）</help>
+        <label><!-- Function Used Minutes --></label>
+        <name>copado__Custom_Function_Used_Minutes__c</name>
+    </fields>
+    <fields>
+        <help>マルチステップデプロイメントの全体的な結果を把握するために使用されます。</help>
+        <label><!-- Deployment --></label>
+        <name>copado__Deployment__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>結果レコードの説明</help>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <help>ジョブの合計所要時間。この値を使用して、ジョブのパフォーマンスを追跡するために使用します。</help>
+        <label><!-- Duration (in seconds) --></label>
+        <name>copado__Duration__c</name>
+    </fields>
+    <fields>
+        <help>ジョブ終了日時</help>
+        <label><!-- End Time --></label>
+        <name>copado__End_Time__c</name>
+    </fields>
+    <fields>
+        <help>問題の特定に役立つコード</help>
+        <label><!-- Error Code --></label>
+        <name>copado__Error_Code__c</name>
+    </fields>
+    <fields>
+        <help>ジョブが失敗した場合のエラーの説明</help>
+        <label><!-- Error Message --></label>
+        <name>copado__Error_Message__c</name>
+    </fields>
+    <fields>
+        <help>関数で使用可能な計算リソース</help>
+        <label><!-- Function Worker Size --></label>
+        <name>copado__Function_Worker_Size__c</name>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation>分</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XL</masterLabel>
+            <translation><!-- XL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この結果を引き起こしたCopado関数</help>
+        <label><!-- Function --></label>
+        <name>copado__Function__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この結果がジョブテンプレートの一部として実行されるジョブステップの結果である場合、このフィールドはジョブステップを指します。(ジョブステップと関数は同時に入力することができます。）</help>
+        <label><!-- Job Step --></label>
+        <name>copado__JobStep__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ジョブステップのジョブ実行へのショートカットの記録リンク</help>
+        <label><!-- Job Execution --></label>
+        <name>copado__Job_Execution__c</name>
+    </fields>
+    <fields>
+        <help>このプロセスをコパードの外で発生する他のプロセスと対応させることができます。</help>
+        <label><!-- External Job ID --></label>
+        <name>copado__Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>結果をトリガーしたジョブのAPI名。この情報はレポート作成に利用できます。</help>
+        <label><!-- Job API Name --></label>
+        <name>copado__Job_Type__c</name>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation>統合</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>外部結果をレコードにリンクするために使用するフィールド</help>
+        <label><!-- External Result Link --></label>
+        <name>copado__Link__c</name>
+    </fields>
+    <fields>
+        <help>結果を生成したプロセスのトリガーとなったレコードの15桁のID。</help>
+        <label><!-- Context ID --></label>
+        <name>copado__ParentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>copado__Parent__c</name>
+    </fields>
+    <fields>
+        <help>このステータスは現在のジョブアクティビティを追跡するために使用されます。</help>
+        <label><!-- Progress Status --></label>
+        <name>copado__Progress_Status__c</name>
+    </fields>
+    <fields>
+        <help>プロモーションイベントからトリガーされたジョブ結果を追跡するために使用されます。</help>
+        <label><!-- Promotion --></label>
+        <name>copado__Promotion__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>プロセスによって返されたすべてのデータを含む。これは他のプロセスで使用できます。</help>
+        <label><!-- Result Data --></label>
+        <name>copado__Result_Data__c</name>
+    </fields>
+    <fields>
+        <help>ジョブの開始日時</help>
+        <label><!-- Start Time --></label>
+        <name>copado__Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>現在のステータスです。結果が保留中または完了したかどうかを確認します。</help>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>キャンセル済</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>失敗</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>未開始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation>成功</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>実行をトリガーしたテストの親オブジェクト。</help>
+        <label><!-- Test --></label>
+        <name>copado__Test__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>一定時間 (たとえば 60 分) 経過しても関数のジョブからの応答がない場合に、 コパードにステータスを”失敗（Failed）”に更新させたい場合は、 ここで定義します。</help>
+        <label><!-- Timeout (minutes) --></label>
+        <name>copado__Timeout__c</name>
+    </fields>
+    <fields>
+        <help>結果の元となったユーザーストーリー</help>
+        <label><!-- User Story --></label>
+        <name>copado__User_Story__c</name>
+        <relationshipLabel><!-- Result --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Result Name --></nameFieldLabel>
+</CustomObjectTranslation>

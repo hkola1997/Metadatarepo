@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Automation Rule --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>copado__Active__c</name>
+    </fields>
+    <fields>
+        <help>レコードのステータス更新や他のレコードの作成など、より具体的な操作を行うために使用するフローのAPI名です。</help>
+        <label><!-- Flow or Class API Name --></label>
+        <name>copado__Automated_Action_Callback__c</name>
+    </fields>
+    <fields>
+        <help>ソースアクションとその結果に基づいて実行されるアクション</help>
+        <label><!-- Automated Action --></label>
+        <name>copado__Automated_Action__c</name>
+    </fields>
+    <fields>
+        <help>ソースと自動アクションの間でペイロードとパラメータをマッピングするコネクター。カスタムコネクタクラスを指定する場合は、「カスタム」を選択します。</help>
+        <label><!-- Automation Type --></label>
+        <name>copado__Automation_Connector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Config Json --></label>
+        <name>copado__Config_Json__c</name>
+    </fields>
+    <fields>
+        <help>www.cronmaker.com を参照して、より複雑なクロン（Cron）を作成することができます。セールスフォースでサポートしていないCron表記もありますので、ご注意下さい。</help>
+        <label><!-- Cron Expression --></label>
+        <name>copado__Cron_Expression__c</name>
+    </fields>
+    <fields>
+        <help>ソースと自動化されたアクションのペイロードとパラメータをマッピングするために使用されるApexクラスのAPI名</help>
+        <label><!-- Custom Automation Type (API Name) --></label>
+        <name>copado__Custom_Automation_Connector__c</name>
+    </fields>
+    <fields>
+        <help>このフィールドは、このオートメーションの目的についての説明を提供するために使用されます。</help>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <help>ソースアクションが評価される環境の一覧です。最大13環境まで選択可能です。</help>
+        <label><!-- Selected Environments --></label>
+        <name>copado__Environment__c</name>
+    </fields>
+    <fields>
+        <help>ステージ選択時に除外する環境の一覧です。最大13環境まで選択可能です。</help>
+        <label><!-- Excluded Environments --></label>
+        <name>copado__Excluded_Environments__c</name>
+    </fields>
+    <fields>
+        <help>自動化されたアクションがすぐに実行されるか、スケジュールされるかを指定します。</help>
+        <label><!-- Execution Time --></label>
+        <name>copado__Execution__c</name>
+        <picklistValues>
+            <masterLabel>Immediate</masterLabel>
+            <translation>すぐに実行</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation>スケジュール</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Filter Criteria --></label>
+        <name>copado__Filter_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Execution Date Time --></label>
+        <name>copado__Last_Execution_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>このオートメーションが実行されるパイプライン。ステージまたは環境が定義されていない場合、このオートメーションはパイプライン全体に適用され、デフォルトルールと見なされます。</help>
+        <label><!-- Pipeline --></label>
+        <name>copado__Pipeline__c</name>
+        <relationshipLabel><!-- Automation Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quality Gate Rule Condition --></label>
+        <name>copado__Quality_Gate_Rule_Condition__c</name>
+        <relationshipLabel><!-- Automation Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Job Id --></label>
+        <name>copado__Scheduled_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>ソースアクションの実行が成功または失敗した後にオートメーションをトリガーするかどうかを定義します。</help>
+        <label><!-- Trigger Action Status --></label>
+        <name>copado__Source_Action_Status__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>エラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successful</masterLabel>
+            <translation>成功</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>オートメーションのトリガーとなるアクション</help>
+        <label><!-- Trigger Action --></label>
+        <name>copado__Source_Action__c</name>
+    </fields>
+    <fields>
+        <help>ソースアクションが評価されるステージの一覧です。13ステージまで選択可能です。</help>
+        <label><!-- Selected Stages --></label>
+        <name>copado__Stage__c</name>
+    </fields>
+    <nameFieldLabel><!-- Automation Rule Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Environment and Stage fields cannot be selected at the same time. Define the most granular filters using Environments, or broader filters using Stage. --></errorMessage>
+        <name>copado__Stage_and_Environment_both_populated</name>
+    </validationRules>
+</CustomObjectTranslation>

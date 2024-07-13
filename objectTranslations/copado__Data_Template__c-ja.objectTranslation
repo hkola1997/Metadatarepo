@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Data Template --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>copado__Active__c</name>
+    </fields>
+    <fields>
+        <help>デプロイされるレコードの添付ファイルを挿入、更新、削除します。</help>
+        <label><!-- Attachment Actions --></label>
+        <name>copado__Attachment_Options__c</name>
+        <picklistValues>
+            <masterLabel>Insert Attachments</masterLabel>
+            <translation>添付ファイルを挿入</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Actions</masterLabel>
+            <translation>ノーアクション</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove Attachments</masterLabel>
+            <translation>添付ファイルを削除</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace Attachments</masterLabel>
+            <translation>添付ファイルを置き換え</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>copado__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Continue on Error --></label>
+        <name>copado__Continue_on_Error__c</name>
+        <picklistValues>
+            <masterLabel>Continue deployment until blocker issue</masterLabel>
+            <translation>ブロッカー問題が発生するまでデプロイを続ける</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stop deployment on first issue</masterLabel>
+            <translation>初回発行時に配備を停止</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Logic --></label>
+        <name>copado__Filter_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Object --></label>
+        <name>copado__Main_Object__c</name>
+    </fields>
+    <fields>
+        <help>所有者が一致しない場合、ターゲットクレデンシャル内のデプロイ済みレコードの所有者が、デプロイを実行するユーザに自動的に割り当てられます。</help>
+        <label><!-- Match Owners --></label>
+        <name>copado__Match_Owners__c</name>
+    </fields>
+    <fields>
+        <help>レコードタイプを照合する際、レコードが見つかった場合ターゲットクレデンシャル内のレコードは、ソースクレデンシャルと同じレコードタイプに割り当てられます。そうでない場合は、デプロイするユーザのプロファイルのデフォルトレコードタイプに割り当てられます。</help>
+        <label><!-- Match Record Type --></label>
+        <name>copado__Match_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max. Record Limit --></label>
+        <name>copado__Max_Record_Limit__c</name>
+    </fields>
+    <fields>
+        <help>選択したクレデンシャルの Salesforce Org データモデルに基づいて、メインオブジェクト、フィールド、および関連オブジェクトがリストされます。クレデンシャルにリンクされている Salesforce ユーザは、デプロイに必要なすべてのフィールドとオブジェクトにアクセスできる必要があります。</help>
+        <label><!-- Template Schema Credential --></label>
+        <name>copado__Template_Source_Org__c</name>
+        <relationshipLabel><!-- Data Templates --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Data Template Name --></nameFieldLabel>
+    <webLinks>
+        <label><!-- Import_Templates --></label>
+        <name>copado__Import_Templates</name>
+    </webLinks>
+</CustomObjectTranslation>

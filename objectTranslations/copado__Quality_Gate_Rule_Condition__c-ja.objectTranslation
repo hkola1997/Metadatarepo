@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Quality Gate Rule Condition --></value>
+    </caseValues>
+    <fields>
+        <help>この品質ゲートを無事に通過するために満たさなければならない要件と閾値</help>
+        <label><!-- Acceptance Criteria --></label>
+        <name>copado__AcceptanceCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Actions --></label>
+        <name>copado__Actions__c</name>
+    </fields>
+    <fields>
+        <help>この品質ゲート条件が評価される環境。パイプラインが定義されていない場合、この条件は、この環境が接続されているすべてのパイプラインに適用されます。</help>
+        <label><!-- Environment --></label>
+        <name>copado__Environment__c</name>
+        <relationshipLabel><!-- Quality Gate Rule Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Execution Sequence --></label>
+        <name>copado__ExecutionSequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Configuration --></label>
+        <lookupFilter>
+            <errorMessage><!-- Make sure the selected Extension Configuration is valid and active. --></errorMessage>
+        </lookupFilter>
+        <name>copado__Extension_Configuration__c</name>
+        <relationshipLabel><!-- Quality Gate Rule Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>設定したコパードアクションに指定されたファイルが存在する場合のみ、条件を評価するフィルタ条件を定義します。</help>
+        <label><!-- Filter Criteria --></label>
+        <name>copado__Filter_Criteria__c</name>
+    </fields>
+    <fields>
+        <help>この品質ゲート条件が評価されるパイプライン。</help>
+        <label><!-- Pipeline --></label>
+        <name>copado__Pipeline__c</name>
+        <relationshipLabel><!-- Quality Gate Rule Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Platform --></label>
+        <name>copado__Platform__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation>セールスフォース</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quality Gate Rule --></label>
+        <name>copado__Quality_Gate_Rule__c</name>
+        <relationshipLabel><!-- Quality Gate Rule Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この「品質ゲート条件」が評価されるステージ。パイプラインが定義されていない場合は、このステージが接続されている全てのパイプラインに適用されます。</help>
+        <label><!-- Stage --></label>
+        <name>copado__Stage__c</name>
+        <relationshipLabel><!-- Quality Gate Rule Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+    </fields>
+    <fields>
+        <help>品質ゲートの一部として実行されるテストの取得先を選択します。</help>
+        <label><!-- Tests From --></label>
+        <name>copado__Tests_From__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation>アプリケーション</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature</masterLabel>
+            <translation>フィーチャー（機能）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Story</masterLabel>
+            <translation>ユーザーストーリー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tool --></label>
+        <name>copado__Tool__c</name>
+    </fields>
+    <nameFieldLabel><!-- Quality Gate Rule Condition Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The selected platform does not match the chosen pipeline or environment platform value. --></errorMessage>
+        <name>copado__ConsistentPlatform</name>
+    </validationRules>
+</CustomObjectTranslation>

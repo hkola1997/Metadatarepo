@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Commit Files Information --></label>
+        <name>copado__Commit_Files_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Copado Header Fields --></label>
+        <name>copado__Copado_Header_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CustomFields --></label>
+        <name>copado__CustomFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Git Commit Header --></label>
+        <name>copado__Git_Commit_Header</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Snapshot Waiting Page --></label>
+        <name>copado__Snapshot_Waiting_Page</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Git branch where the metadata will be committed. Please be aware that this branch must exist in the specified Git repository and that branch names are case sensitive. --></help>
+        <label><!-- Branch --></label>
+        <name>copado__Branch__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status of the most recent Compliance Scan of the Branch specified in the Git Snapshot. --></help>
+        <label><!-- Compliance Status --></label>
+        <name>copado__Compliance_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- You can use www.cronmaker.com to create more sophisticated cron expressions. Please keep in mind that certain cron expressions might not be supported by Salesforce. --></help>
+        <label><!-- Cron Expression --></label>
+        <name>copado__Cron_Expression__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>copado__External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Schedule automatic metadata backups. With the frequency set, Copado will automatically commit the metadata components of the Org into the Branch. --></help>
+        <label><!-- Frequency --></label>
+        <name>copado__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Git repository linked to the Git snapshot. Please make sure that the specified branch exists in the repository. It is not recommended to take snapshots with a Git repository which is already used for an active pipeline, as it may affect your overall DevOps performance. --></help>
+        <label><!-- Git Repository --></label>
+        <name>copado__Git_Repository__c</name>
+        <relationshipLabel><!-- Git Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Git Snapshot Permissions --></label>
+        <name>copado__Git_Snapshot_Permissions__c</name>
+        <picklistValues>
+            <masterLabel>Allow Commits Only</masterLabel>
+            <translation><!-- Allow Commits Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allow Snapshots &amp; Commits</masterLabel>
+            <translation><!-- Allow Snapshots &amp; Commits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allow Snapshots Only</masterLabel>
+            <translation><!-- Allow Snapshots Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of the last Snapshot committed into the Branch. --></help>
+        <label><!-- Last Snapshot --></label>
+        <name>copado__Last_Backup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of the last Compliance Scan of the Branch specified in the Git Snapshot. --></help>
+        <label><!-- Last Compliance Scan Date --></label>
+        <name>copado__Last_Compliance_Scan_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Empty means all types. Select one or more types to limit the backup only to selected items. --></help>
+        <label><!-- Metadata Types --></label>
+        <name>copado__Metadata_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- A validated Org Credential used to retrieve the metadata that will be committed to the branch specified in the Git Snapshot. --></help>
+        <label><!-- Credential --></label>
+        <name>copado__Org__c</name>
+        <relationshipLabel><!-- Git Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Information --></label>
+        <name>copado__Other_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pipeline where the Git snapshot will be applied. It must be associated to the specified credential. --></help>
+        <label><!-- Pipeline --></label>
+        <name>copado__Pipeline__c</name>
+        <relationshipLabel><!-- Git Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the files for which you want to take the snapshot. The format may vary depending on the extension that you are using. Please refer to your extension documentation. --></help>
+        <label><!-- Scope --></label>
+        <name>copado__Scope__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to configure automatic metadata backups. Copado will automatically commit the metadata components of the Org as per the frequency and cron expression defined. --></help>
+        <label><!-- Frequency --></label>
+        <name>copado__Snapshot_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule</masterLabel>
+            <translation><!-- Schedule --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Link to the branch in your Git Repository. --></help>
+        <label><!-- View in Git --></label>
+        <name>copado__View_in_Git__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Select_Branch --></label>
+        <name>copado__Select_Branch</name>
+    </webLinks>
+</CustomObjectTranslation>

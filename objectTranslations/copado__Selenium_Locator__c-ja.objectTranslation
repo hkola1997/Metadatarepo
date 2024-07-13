@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Selenium Locator --></value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>copado__External_ID__c</name>
+    </fields>
+    <fields>
+        <help>この値はユーザー定義です。ロケーターIDを設定すると、Seleniumテストケースのスクリプトで {!Locator.ID} のように使用することができます。例： {!Locator.ACCOUNT_SAVE_BUTTON}</help>
+        <label><!-- Locator ID --></label>
+        <name>copado__Locator_ID__c</name>
+    </fields>
+    <fields>
+        <help>ページ上の要素を識別するSeleniumろけーたー</help>
+        <label><!-- Locator --></label>
+        <name>copado__Locator__c</name>
+    </fields>
+    <fields>
+        <help>ロケーターのコンテキストを与えるために使用されます。任意のテキストを使用することができます。
+　Copadoレコーダーは、録画時にページタイトルを自動的に設定します。</help>
+        <label><!-- Page --></label>
+        <name>copado__Page__c</name>
+    </fields>
+    <nameFieldLabel><!-- Selenium Locator Name --></nameFieldLabel>
+</CustomObjectTranslation>

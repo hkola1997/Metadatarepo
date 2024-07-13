@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Custom Connected App --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Callback URL --></label>
+        <name>copado__Callback_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>copado__ClientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>copado__ClientSecret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected App Id --></label>
+        <name>copado__Connected_App_Id__c</name>
+    </fields>
+    <nameFieldLabel><!-- Custom Connected App Info Name --></nameFieldLabel>
+</CustomObjectTranslation>
