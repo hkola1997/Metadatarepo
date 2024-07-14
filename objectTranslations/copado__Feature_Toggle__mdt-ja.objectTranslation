@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Feature Toggle --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Custom Permission Name --></label>
+        <name>copado__Custom_Permission_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Toggle Group --></label>
+        <name>copado__Feature_Toggle_Group__c</name>
+        <relationshipLabel><!-- Feature Toggles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Full Description --></label>
+        <name>copado__Full_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>copado__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Description --></label>
+        <name>copado__Short_Description__c</name>
+    </fields>
+</CustomObjectTranslation>

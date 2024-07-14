@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Pipeline Action --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Action --></label>
+        <name>copado__Action__c</name>
+    </fields>
+    <fields>
+        <help>このチェックボックスは、このパイプラインアクションがパイプラインのすべての環境にわたってデフォルトとして使用されるかどうかのフラグになります。</help>
+        <label><!-- Default --></label>
+        <name>copado__Default__c</name>
+    </fields>
+    <fields>
+        <help>パイプラインで定義されたデフォルトのジョブテンプレートを上書きする環境を選択します。</help>
+        <label><!-- Environment --></label>
+        <name>copado__Environment__c</name>
+        <relationshipLabel><!-- Pipeline Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このフィールドは、設定されるアクションに対応するジョブテンプレートを定義します。特定の環境でこのアクションに別のジョブテンプレートを選択したい場合、パイプラインで設定されたテンプレートを上書きすることになります。</help>
+        <label><!-- Job Template --></label>
+        <name>copado__Job_Template__c</name>
+        <relationshipLabel><!-- Pipeline Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このフィールドは、デフォルト以外のパイプラインアクションのレコードを作成したときに自動的に入力されます。</help>
+        <label><!-- Overrides Pipeline Action --></label>
+        <name>copado__Overrides_Pipeline_Action__c</name>
+        <relationshipLabel><!-- Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このアクションが適用されるパイプラインを選択します。</help>
+        <label><!-- Pipeline --></label>
+        <name>copado__Pipeline__c</name>
+        <relationshipLabel><!-- Pipeline Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このフィールドは、このアクションにリンクされたパイプラインで選択されたプラットフォームに基づいて自動入力されます。</help>
+        <label><!-- Platform --></label>
+        <name>copado__Platform__c</name>
+    </fields>
+    <nameFieldLabel><!-- Pipeline Action Name --></nameFieldLabel>
+</CustomObjectTranslation>

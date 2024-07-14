@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Bundled User Story --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Bundle --></label>
+        <name>copado__Bundle</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>下書き</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Story Bundle --></label>
+        <name>copado__User_Story_Bundle__c</name>
+        <relationshipLabel><!-- Bundled User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Story --></label>
+        <name>copado__User_Story__c</name>
+        <relationshipLabel><!-- Bundled User Stories --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Bundled User Story Name --></nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Job Execution --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Data Set Job Executions --></label>
+        <name>copado__Data_Set_Job_Executions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Promotion Job Executions --></label>
+        <name>copado__Promotion_Job_Executions</name>
+    </fieldSets>
+    <fields>
+        <help>このフィールドでは、関数が開始されると実行されるアクションを定義できます。このアクションは、copado.JobExecutionCallback インターフェースを実装する Apex クラスである必要があります。</help>
+        <label><!-- Callback --></label>
+        <name>copado__Callback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commit --></label>
+        <name>copado__Commit__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Context --></label>
+        <name>copado__Context__c</name>
+    </fields>
+    <fields>
+        <help>このフィールドには、メタデータ削除ステップのテストレベルが含まれます。</help>
+        <label><!-- DataJson --></label>
+        <name>copado__DataJson__c</name>
+    </fields>
+    <fields>
+        <help>処理をトリガーしたデプロイメントへのルックアップ フィールド</help>
+        <label><!-- Deployment --></label>
+        <name>copado__Deployment__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>宛先環境の名前</help>
+        <label><!-- Destination --></label>
+        <name>copado__Destination__c</name>
+        <relationshipLabel><!-- Job Executions (Destination) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ジョブが失敗した場合のエラーの説明</help>
+        <label><!-- Error Message --></label>
+        <name>copado__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Step --></label>
+        <name>copado__Job_Step__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Id(Formula) --></label>
+        <name>copado__ParentId__c</name>
+    </fields>
+    <fields>
+        <help>コミットジョブテンプレートなど、ジョブ実行にリンクしている親レコードのID</help>
+        <label><!-- Parent Id --></label>
+        <name>copado__ParentRecord_Id__c</name>
+    </fields>
+    <fields>
+        <help>このジョブの実行が適用されるパイプラインへのルックアップ・フィールド</help>
+        <label><!-- Pipeline --></label>
+        <name>copado__Pipeline__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>処理をトリガーしたプロモーションへのルックアップ フィールド</help>
+        <label><!-- Promotion --></label>
+        <name>copado__Promotion__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>選択したメタデータ タイプのリポジトリ/ブランチへの完全バックアップです。</help>
+        <label><!-- Snapshot --></label>
+        <name>copado__Snapshot__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ソース環境の名前</help>
+        <label><!-- Source --></label>
+        <name>copado__Source__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ジョブ実行のステータス</help>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>キャンセル済</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>エラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>未開始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successful</masterLabel>
+            <translation>成功</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ジョブ実行プロセスで使用されるジョブテンプレート</help>
+        <label><!-- Template --></label>
+        <name>copado__Template__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このフィールドは、ジョブ実行の親ユーザーストーリー・コミット・レコードを参照します。</help>
+        <label><!-- User Story Commit --></label>
+        <name>copado__UserStoryCommit__c</name>
+        <relationshipLabel><!-- Job Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このフィールドには、新しいジョブが実行されるたびに使用されるボリュームの設定を持つJSONオプションのリストを導入できます。</help>
+        <label><!-- VolumeOptions --></label>
+        <name>copado__VolumeOptions__c</name>
+    </fields>
+    <nameFieldLabel><!-- Job Execution Name --></nameFieldLabel>
+</CustomObjectTranslation>

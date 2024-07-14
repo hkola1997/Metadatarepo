@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to render resultViewerPublishMessage on Result record Detail Page</description>
+    <isLicensed>false</isLicensed>
+    <label>Access AQF</label>
+</CustomPermission>

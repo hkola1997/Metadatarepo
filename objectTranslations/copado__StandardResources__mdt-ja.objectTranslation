@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- StandardResources --></value>
+    </caseValues>
+    <fields>
+        <help>静的リソースの API 名</help>
+        <label><!-- Provider --></label>
+        <name>copado__Provider__c</name>
+    </fields>
+    <fields>
+        <help>静的リソースバンドル・プロバイダの名前</help>
+        <label><!-- Static Resource Name --></label>
+        <name>copado__StaticResourceName__c</name>
+    </fields>
+</CustomObjectTranslation>

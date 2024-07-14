@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Project --></value>
+    </caseValues>
+    <fields>
+        <help>このフィールドは、アクションでプロジェクトレコードを参照する際に、その識別子として使用します。</help>
+        <label><!-- API Name --></label>
+        <name>copado__API_Name__c</name>
+    </fields>
+    <fields>
+        <help>コパード変更管理で作業する場合、プロジェクトはパイプラインにリンクされている必要があります。</help>
+        <label><!-- Pipeline --></label>
+        <name>copado__Deployment_Flow__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>copado__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclude Tabs from Promotion Page --></label>
+        <name>copado__Exclude_Tabs_from_Promotion_Page__c</name>
+        <picklistValues>
+            <masterLabel>Promotion User Story Metadata</masterLabel>
+            <translation>ユーザーストーリーメタデータのプロモーション</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selenium Test</masterLabel>
+            <translation>Seleniumテスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Code Analysis Summary</masterLabel>
+            <translation>静的コード分析の概要</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このフィールドをチェックすると、コパードはユーザーストーリーに対して選択されたメタデータをユーザーストーリーカスタムオブジェクトにインデックスします。インデックスされたメタデータは、レポートやコンプライアンスに使用することができ、Copadoのサジェスション・気付き機能でも使用されます。</help>
+        <label><!-- Index Metadata --></label>
+        <name>copado__Index_Metadata__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>copado__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完了</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>下書き</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>計画されている</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Project Name --></nameFieldLabel>
+</CustomObjectTranslation>

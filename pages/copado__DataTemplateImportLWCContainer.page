@@ -1,0 +1,16 @@
+<apex:page standardController="copado__Data_Template__c" recordSetVar="dataTemplates" extensions="copado.DataTemplateImportCtrl" showHeader="false" sidebar="false">
+    <apex:includeLightning />
+    <div id="LightningComponentid" />
+    <script>
+        const namespace = '{! namespace }';
+        $Lightning.use(namespace + ":" + "DataTemplateImportApp", function () {
+            $Lightning.createComponent(namespace + ":" + "dataTemplateImport",
+                {
+                },
+                "LightningComponentid",
+                function (cmp) {
+                    console.log('LWC Componenet added in VF page');
+                });
+        });
+    </script>
+</apex:page>

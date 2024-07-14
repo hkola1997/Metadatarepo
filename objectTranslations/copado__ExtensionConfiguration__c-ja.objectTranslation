@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Extension Configuration --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Acceptance Criteria --></label>
+        <name>copado__AcceptanceCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>copado__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>copado__Details__c</name>
+    </fields>
+    <fields>
+        <help>使用する拡張ツールに基づいて、コパードフェーズを選択します。たとえば、テストを選択すると、拡張ツールのピックリストに、その特定のフェーズで使用可能なツールがリストアップされます (例: Copado Robotic Test、Apex tests、または PMD や CodescanなどのSCA ツール)。</help>
+        <label><!-- Copado Phase --></label>
+        <name>copado__ExtensionApplication__c</name>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation>テスト</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Extension Tool --></label>
+        <name>copado__ExtensionTool__c</name>
+        <picklistValues>
+            <masterLabel>Manual Tests</masterLabel>
+            <translation>マニュアルテスト</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status - Deprecated --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>アクティブ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>非有効</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup Pending</masterLabel>
+            <translation>セットアップ保留</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test Type --></label>
+        <name>copado__TestType__c</name>
+    </fields>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- This Extension Tool cannot be modified. Please create a new Extension Configuration record instead. --></errorMessage>
+        <name>copado__PreventUpdatingExtensionTool</name>
+    </validationRules>
+</CustomObjectTranslation>

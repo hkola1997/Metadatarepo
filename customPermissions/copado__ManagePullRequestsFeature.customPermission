@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enables the management and review of pull requests, facilitating code review and collaboration among development teams.</description>
+    <isLicensed>false</isLicensed>
+    <label>Pull Requests</label>
+</CustomPermission>

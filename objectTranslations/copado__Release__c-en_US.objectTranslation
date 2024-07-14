@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Copado Header Fields --></label>
+        <name>copado__Copado_Header_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- All user story feature branches are created out of the main branch of the Deployment Flow. If a Release base branch is specified, all feature branches of user stories linked to the Release will be created out of the base branch. --></help>
+        <label><!-- Base Branch --></label>
+        <name>copado__Base_Branch__c</name>
+    </fields>
+    <fields>
+        <help><!-- Update this date when the release is complete. --></help>
+        <label><!-- Completion Date --></label>
+        <name>copado__Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Informative field to define a parent release --></help>
+        <label><!-- Parent Release --></label>
+        <name>copado__Parent_Release__c</name>
+        <relationshipLabel><!-- Child Releases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Date --></label>
+        <name>copado__Planned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>copado__Project__c</name>
+        <relationshipLabel><!-- Releases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Describe the outcome of the release. If it was released, how it went? If canceled, why? --></help>
+        <label><!-- Status Notes --></label>
+        <name>copado__Status_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Released</masterLabel>
+            <translation><!-- Released --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Update this date when all the Testing activities are completed. --></help>
+        <label><!-- Testing Completed --></label>
+        <name>copado__Testing_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Update these values via the &quot;Set Version&quot; option --></help>
+        <label><!-- Type --></label>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patch</masterLabel>
+            <translation><!-- Patch --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When a Promotion linked to this Release is merged into the Main Branch of the deployment flow, Copado will tag the Main Branch with this version number. This value is typically a major (e.g. v7), minor (v7.3) or patch (v7.3.2) release. --></help>
+        <label><!-- Version --></label>
+        <name>copado__Version__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- please dont include spaces in version field --></errorMessage>
+        <name>copado__Validate_spaces_in_version</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_add_to_Release --></label>
+        <name>copado__Mass_add_to_Release</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Select_Base_Branch --></label>
+        <name>copado__Select_Base_Branch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Switch_to_previous_UI --></label>
+        <name>copado__Switch_to_previous_UI</name>
+    </webLinks>
+</CustomObjectTranslation>

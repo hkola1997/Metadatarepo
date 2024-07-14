@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- User Story Dependency --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Child User Story Release --></label>
+        <name>copado__Child_User_Story_Release__c</name>
+        <relationshipLabel><!-- User Story Dependencies (Child User Story Release) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>子ユーザーストーリーのステータス</help>
+        <label><!-- Child User Story Status --></label>
+        <name>copado__Child_User_Story_Status__c</name>
+    </fields>
+    <fields>
+        <help>他チームから必要とされるユーザーストーリーの簡易説明文（最大255文字）。詳細な説明は、ノートフィールドに追加することができます。</help>
+        <label><!-- Deliverable --></label>
+        <name>copado__Deliverable__c</name>
+    </fields>
+    <fields>
+        <help>2つのユーザーストーリー間の依存関係のステータス。例 優先順位、コミット、完了。このフィールドは手動で編集できます。ただし、親ユーザストーリーを”完了”にすると、自動的に”完了”になります。</help>
+        <label><!-- Dependency Status --></label>
+        <name>copado__Dependency_Status__c</name>
+        <picklistValues>
+            <masterLabel>Committed</masterLabel>
+            <translation>コミット済</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完了しました</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>延期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More Info Needed</masterLabel>
+            <translation>詳細情報が必要です。</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>なし（Never)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>新規</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prioritized</masterLabel>
+            <translation>優先順位</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ユーザーストーリーを提供するために別のチームに依存するチーム。</help>
+        <label><!-- Child User Story Team --></label>
+        <name>copado__Dependent_Team__c</name>
+        <relationshipLabel><!-- User Story Dependencies (Dependent Team) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>親ユーザーストーリーの完了に依存するユーザーストーリー</help>
+        <label><!-- Child User Story --></label>
+        <name>copado__Dependent_User_Story__c</name>
+        <relationshipLabel><!-- Parent User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Needed by (Date) --></label>
+        <name>copado__Needed_by_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>copado__Notes__c</name>
+    </fields>
+    <fields>
+        <help>親ユーザーストーリーのステータス</help>
+        <label><!-- Parent User Story Status --></label>
+        <name>copado__Parent_User_Story_Status__c</name>
+    </fields>
+    <fields>
+        <help>この依存関係を満たすために成果物を提供するチーム</help>
+        <label><!-- Parent User Story Team --></label>
+        <name>copado__Provider_Team__c</name>
+        <relationshipLabel><!-- User Story Dependencies (Provider Team) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この依存関係の成果物を満たすためのユーザーストーリーを表すレコード</help>
+        <label><!-- Parent User Story --></label>
+        <name>copado__Provider_User_Story__c</name>
+        <relationshipLabel><!-- Child User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ユーザーストーリーの親子関係タイプの値を入力します。デフォルトでは、このフィールドの値は &quot;Relates-to&quot; に設定されています。これは制限のないリストであるため、他の値を追加することができます。</help>
+        <label><!-- Relationship Type --></label>
+        <name>copado__Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>blocking</masterLabel>
+            <translation>ブロックしている</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>duplicating</masterLabel>
+            <translation>重複している</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fixing</masterLabel>
+            <translation>修正している</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>relates to</masterLabel>
+            <translation>関係している</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent User Story Release --></label>
+        <name>copado__Release__c</name>
+        <relationshipLabel><!-- User Story Dependencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>依存関係のステータスが、完了、延期、または未実施に設定されるたびに、値はTrue に設定されます。</help>
+        <label><!-- Skip Dependency --></label>
+        <name>copado__Skip_Dependency__c</name>
+    </fields>
+    <nameFieldLabel><!-- User Story Dependency Name --></nameFieldLabel>
+</CustomObjectTranslation>

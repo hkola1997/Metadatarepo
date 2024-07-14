@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Function --></value>
+    </caseValues>
+    <fields>
+        <help>この機能を識別するための一意な名前になります。関数の結果レコードには、レポートやダッシュボードでこれらの結果をフィルタリングするためのジョブタイプフィールドがあり、このAPI名も含まれています。</help>
+        <label><!-- API Name --></label>
+        <name>copado__API_Name__c</name>
+    </fields>
+    <fields>
+        <help>ハンドラーフォーマット：className  
+ クラスはMCCallbackインタフェースを実装する必要があります。</help>
+        <label><!-- ApexClass --></label>
+        <name>copado__ApexClass__c</name>
+    </fields>
+    <fields>
+        <help>関数で選択されたコールバックのタイプ</help>
+        <label><!-- Callback Type --></label>
+        <name>copado__Callback_Type__c</name>
+        <picklistValues>
+            <masterLabel>ApexClass</masterLabel>
+            <translation>Apexクラス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow</masterLabel>
+            <translation>フロー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>関数の説明</help>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <help>ハンドラー形式：FlowAPIName</help>
+        <label><!-- FlowHandler --></label>
+        <name>copado__FlowHandler__c</name>
+    </fields>
+    <fields>
+        <help>コパードが提供するdockerイメージの名前。利用可能なすべてのイメージを見つけるには、ドキュメントサイトをチェックしてください。</help>
+        <label><!-- Image Name --></label>
+        <name>copado__Image_Name__c</name>
+    </fields>
+    <fields>
+        <help>これらの設定でスタンドアロン関数を実行するために使用するmaxVolumeとvolumeTTLを定義します。</help>
+        <label><!-- Options --></label>
+        <name>copado__Options__c</name>
+    </fields>
+    <fields>
+        <help>これは、実行を呼び出す前に必要なすべてのパラメータが設定されているかどうかを検証するために使用されます。</help>
+        <label><!-- Parameters --></label>
+        <name>copado__Parameters__c</name>
+    </fields>
+    <fields>
+        <help>関連する結果レコードにレンダリングするライトニングコンポーネントの名前です。名前は namespace:componentName 形式である必要があります。</help>
+        <label><!-- Result Viewer Component --></label>
+        <name>copado__Result_Viewer_Component__c</name>
+    </fields>
+    <fields>
+        <help>関数に実行させたいコマンドをスクリプトに記述します。</help>
+        <label><!-- Script --></label>
+        <name>copado__Script__c</name>
+    </fields>
+    <fields>
+        <help>関数のバックエンド実行から応答がない場合、自動的に終了するまでの時間です。</help>
+        <label><!-- Timeout --></label>
+        <name>copado__Timeout__c</name>
+    </fields>
+    <fields>
+        <help>コパード関数のタイプ</help>
+        <label><!-- Type --></label>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>関数のバージョン</help>
+        <label><!-- Version --></label>
+        <name>copado__Version__c</name>
+    </fields>
+    <fields>
+        <help>ワーカーのサイズを定義するピックリストフィールド。使用可能なオプションは、S、M、L、および XL です。</help>
+        <label><!-- Worker Size --></label>
+        <name>copado__Worker_Size__c</name>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation>分</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XL</masterLabel>
+            <translation><!-- XL --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Function Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Api name can only contain alphanumeric characters and must begin with a letter --></errorMessage>
+        <name>copado__Function_Name_must_Be_Alpha_Numeric</name>
+    </validationRules>
+</CustomObjectTranslation>

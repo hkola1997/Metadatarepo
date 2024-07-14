@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Kanban Board --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Edit --></label>
+        <name>copado__Edit</name>
+    </fieldSets>
+    <fields>
+        <help>カラムを取得するためのSOQLクエリ。 IDフィールドと名前フィールドを使用してリストを生成します。</help>
+        <label><!-- Columns from SOQL --></label>
+        <name>copado__Columns_SOQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <help>各項目の読み取り/更新のフィールド。　 &quot;object.field&quot;の形式</help>
+        <label><!-- Field to read/update --></label>
+        <name>copado__Field_to_read_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSON Settings --></label>
+        <name>copado__JSON_Settings__c</name>
+    </fields>
+    <fields>
+        <help>SOQLクエリは、フィールド内で定義されているように、各ID、タイトル（クエリ内の2番目のフィールド）、および「ステータス」フィールドを取得します。アイテムのテキスト内容として他のすべてのフィールドが表示されます。</help>
+        <label><!-- SOQL Query --></label>
+        <name>copado__SOQL_Query__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sprint --></label>
+        <name>copado__Sprint__c</name>
+        <relationshipLabel><!-- Kanban Boards --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Kanban Board Name --></nameFieldLabel>
+</CustomObjectTranslation>

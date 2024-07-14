@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Environment Variable --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Related List --></label>
+        <name>copado__RelatedList</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>copado__Environment__c</name>
+        <relationshipLabel><!-- Environment Variables --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この環境変数のスコープを定義するには、このフィールドを使用します。詳細については、環境変数スコープについてのドキュメントを確認してください。</help>
+        <label><!-- Scope --></label>
+        <name>copado__Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>copado__Value__c</name>
+    </fields>
+    <nameFieldLabel><!-- Environment Variable Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Value is required --></errorMessage>
+        <name>copado__Value_is_required</name>
+    </validationRules>
+</CustomObjectTranslation>
