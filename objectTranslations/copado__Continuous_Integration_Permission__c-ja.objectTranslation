@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Continuous Integration Permission --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Access --></label>
+        <name>copado__Access__c</name>
+        <picklistValues>
+            <masterLabel>Read Only</masterLabel>
+            <translation>読み取り専用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Run Continuous Integration</masterLabel>
+            <translation>継続的インテグレーションを実行</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Continuous Integration --></label>
+        <name>copado__Continuous_Integration__c</name>
+        <relationshipLabel><!-- Continuous Integration Permissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Notification --></label>
+        <name>copado__Email_Notification__c</name>
+        <picklistValues>
+            <masterLabel>On Build Failure</masterLabel>
+            <translation>ビルド失敗について</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Build Success</masterLabel>
+            <translation>ビルド成功について</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Deploy Failure</masterLabel>
+            <translation>デプロイメント障害について</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Deploy Success</masterLabel>
+            <translation>デプロイメント成功について</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ここで「メールテンプレート名」を選択します。テンプレートがここに表示されていない場合、管理者が継続的インテグレーション権限オブジェクト上で、このピックリストをカスタマイズして追加する必要があります。</help>
+        <label><!-- Email Template Name --></label>
+        <name>copado__Email_Template_Name__c</name>
+        <picklistValues>
+            <masterLabel>Build Task Status Notification</masterLabel>
+            <translation>タスクステータス通知を構築</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>copado__User__c</name>
+        <relationshipLabel><!-- Continuous Integration Permissions --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Permission Ref --></nameFieldLabel>
+</CustomObjectTranslation>

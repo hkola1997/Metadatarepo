@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Record Matching Formula --></value>
+    </caseValues>
+    <fields>
+        <help>コパードが、数式を構築するために使用可能なオブジェクトとフィールドのリストを取得するためのクレデンシャルになります。</help>
+        <label><!-- Configuration Schema Credential --></label>
+        <name>copado__Configuration_Source_Org__c</name>
+        <relationshipLabel><!-- Record Matching Formulas --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>式の最初のフィールド</help>
+        <label><!-- Field 1 --></label>
+        <name>copado__Field_1__c</name>
+    </fields>
+    <fields>
+        <help>数式の2番目のフィールド</help>
+        <label><!-- Field 2 --></label>
+        <name>copado__Field_2__c</name>
+    </fields>
+    <fields>
+        <help>数式の3番目のフィールド</help>
+        <label><!-- Field 3 --></label>
+        <name>copado__Field_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Labels --></label>
+        <name>copado__Field_Labels__c</name>
+    </fields>
+    <fields>
+        <help>数式をハッシュ化すると、元の値がユニークで固定サイズのランダムな文字に置き換えられます。これにより読み取り不可となり、また値が外部IDフィールドの文字数制限を超えないようにする事ができます。</help>
+        <label><!-- Hash External Id Value --></label>
+        <name>copado__Hash_Formula__c</name>
+    </fields>
+    <fields>
+        <help>ドロップダウンからオブジェクトを選択し、数式を設定します。数式で利用可能なフィールドは、選択されたオブジェクトとソース組織に基づいています。</help>
+        <label><!-- Object --></label>
+        <name>copado__Object__c</name>
+    </fields>
+    <nameFieldLabel><!-- Record Matching Formula Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You can not change the Configuration Schema Credential once the value is selected. --></errorMessage>
+        <name>copado__RestrictSchemaCredentialModification</name>
+    </validationRules>
+</CustomObjectTranslation>

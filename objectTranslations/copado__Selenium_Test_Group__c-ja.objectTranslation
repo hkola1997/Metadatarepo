@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Selenium Test Group --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Selenium_Results_Tab --></label>
+        <name>copado__Selenium_Results_Tab</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>copado__Environment__c</name>
+        <relationshipLabel><!-- Selenium Test Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>copado__External_Id__c</name>
+    </fields>
+    <fields>
+        <help>このオプションをオフにすると、コパードはスイート/クレデンシャルごとにテストランを自動的に作成/更新/削除します。このグループ内のテストランを手動で管理する場合は、チェックしてからテストランリストビューに移動し、&quot;テストグループを追加&quot; オプションを使用します。</help>
+        <label><!-- Manage Test Runs manually --></label>
+        <name>copado__Manage_Test_Runs_manually__c</name>
+    </fields>
+    <fields>
+        <help>チェックされている場合、テスト実行は並行して実行されるのではなく、順番に実行されます。</help>
+        <label><!-- Run Sequentially --></label>
+        <name>copado__Run_Sequentially__c</name>
+    </fields>
+    <fields>
+        <help>このテストグループに属するすべてのテストは、これらのSelenium設定を使用します。</help>
+        <label><!-- Selenium Settings --></label>
+        <name>copado__Selenium_Settings__c</name>
+        <relationshipLabel><!-- Selenium Test Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Date --></label>
+        <name>copado__Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Icon --></label>
+        <name>copado__Status_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed Successfully</masterLabel>
+            <translation>正常に完了しました</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed with Errors</masterLabel>
+            <translation>エラーありで完了しました。</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>キューイング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>回帰テストまたはユーザストーリーテストが選択されている場合、そのテストグループに関連付けられ ているすべてのクレデンシャルを同じ環境にリンクする必要があります。</help>
+        <label><!-- Type --></label>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation>デフォルト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regression Test</masterLabel>
+            <translation>回帰テスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Story Test</masterLabel>
+            <translation>ユーザーストーリーテスト</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Selenium Test Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The Environment field is required if the Type is &quot;User Story Test&quot; or &quot;Regression Test&quot;. --></errorMessage>
+        <name>copado__Environment_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Refresh_Results --></label>
+        <name>copado__Refresh_Results</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Group --></label>
+        <name>copado__Run_Group</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Show_Hook_URL --></label>
+        <name>copado__Show_Hook_URL</name>
+    </webLinks>
+</CustomObjectTranslation>

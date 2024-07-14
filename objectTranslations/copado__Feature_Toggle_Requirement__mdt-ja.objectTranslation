@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Feature Toggle Requirement --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Feature Toggle --></label>
+        <name>copado__Feature_Toggle__c</name>
+        <relationshipLabel><!-- Feature Toggle Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Copado License</masterLabel>
+            <translation><!-- Copado License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Permission</masterLabel>
+            <translation><!-- Custom Permission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permission Set</masterLabel>
+            <translation><!-- Permission Set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permission Set Group</masterLabel>
+            <translation><!-- Permission Set Group --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>copado__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

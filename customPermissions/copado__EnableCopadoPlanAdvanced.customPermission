@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enables advanced features within the Copado Plan, such as enhanced planning tools, advanced analytics, and additional project management capabilities.</description>
+    <isLicensed>false</isLicensed>
+    <label>Copado Plan - Advanced</label>
+</CustomPermission>

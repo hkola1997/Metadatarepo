@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>copado__Feature_Toggle__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Feature Toggle</label>
+        <referenceTo>copado__Feature_Toggle__mdt</referenceTo>
+        <relationshipLabel>Feature Toggle Requirements</relationshipLabel>
+        <relationshipName>Feature_Toggle_Requirements</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CustomPermission</fullName>
+                    <default>true</default>
+                    <label>Custom Permission</label>
+                </value>
+                <value>
+                    <fullName>PermissionSet</fullName>
+                    <default>false</default>
+                    <label>Permission Set</label>
+                </value>
+                <value>
+                    <fullName>PermissionSetGroup</fullName>
+                    <default>false</default>
+                    <label>Permission Set Group</label>
+                </value>
+                <value>
+                    <fullName>CopadoLicense</fullName>
+                    <default>false</default>
+                    <label>Copado License</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Value</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Feature Toggle Requirement</label>
+    <listViews>
+        <fullName>copado__All_Feature_Toggle_Requirements</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>copado__Feature_Toggle__c</columns>
+        <columns>copado__Type__c</columns>
+        <columns>copado__Value__c</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Feature Toggle Requirements</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Feature Toggle Requirements</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

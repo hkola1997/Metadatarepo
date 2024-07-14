@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permits the display of results and outcomes directly within user stories, facilitating a comprehensive overview of testing and deployment outcomes.</description>
+    <isLicensed>false</isLicensed>
+    <label>Display Results in User Story</label>
+</CustomPermission>

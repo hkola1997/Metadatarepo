@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission to enable the user for editing filter data template with ADD permission.</description>
+    <isLicensed>false</isLicensed>
+    <label>Edit Filter Data Template Task</label>
+</CustomPermission>
